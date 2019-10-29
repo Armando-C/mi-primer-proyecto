@@ -24,7 +24,7 @@ background:black;
  border-style: solid;
 }
 .circulo2{
-  border-radius: 50%;
+  border-radius: 51%;
  background: rgba(0,0,0,0.5);
 }
 /*.modal{
