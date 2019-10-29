@@ -1,0 +1,347 @@
+#nav{
+background:black;
+}
+#contenMenu{
+background:black;
+}
+#divSeparador{
+  color: #ffdf00;
+}
+.icon{
+   height: 300px;
+  width: 300px;
+  text-align: center;
+  padding: 60px;
+
+  
+}
+.circulo{
+  padding: 5px;
+  background: red;
+}
+.circulo i{
+  border-radius: 50%;
+ border-style: solid;
+}
+.circulo2{
+  border-radius: 50%;
+ background: rgba(0,0,0,0.5);
+}
+/*.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.452);
+}
+.contenido-modal{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 40%;
+  box-shadow: 0 0 6px rgba(0,0,0,.4);
+  animation-name: modal;
+  animation-duration: 1s;
+  border-radius: 9px;
+}
+@keyframes modal{
+  from{
+    top: -330px;
+    opacity: 0;
+  }
+  to{
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close{
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: bold;
+}
+.close:hover{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header, .modal-footer{
+  padding: 8px 16px;
+  color: #f2f2f2;
+}
+.modal-body{
+  padding: 20px 16px;
+  text-align: center;
+}
+.divIcon{
+padding: 15px;
+}
+.divText{
+padding: 15px;
+}*/
+
+.navbar-nav  li:hover a {
+    background:#c78f02;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.activo {
+    text-decoration: none;
+    background: #b80f22;
+    border-radius: 10px;
+}
+
+.imgLogo{
+  border-style: solid; 
+  border-color: #d9534f; 
+  border-radius: 25px;
+}
+#h6User{
+ display: none;
+}
+ .divLogo{
+display: none;
+  }
+.separador{
+  line-height: .9em;
+  margin: 5px 0;
+}
+.separador span{
+  position: relative;
+  display: inline-block;
+}
+
+.separador span::before,.separador span::after{
+  content: "";
+  position: absolute;
+  top: 7px;
+  width:275px;
+  border-bottom: 1px solid;
+  border-color:#d9534f;
+}
+
+.separador span::before{
+  right: 100%;
+  margin-right: 15px;
+}
+
+.separador span::after{
+  left: 100%;
+  margin-left: 15px;
+}
+
+::after, ::before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.preferencias{
+width:25px;
+height:25px;
+}
+.tituloModalDes{
+padding-bottom: 20px;
+}
+
+/* ESTILO VENTANA GEOLOCALIZACION */
+.body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+  background-image: url('../img/geo.jpeg');
+}
+
+
+.box {
+  width: 400px;
+  height: 600px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 90px 30px;
+}
+
+.box .pregunta {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}
+
+
+#btnpermitir{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#btnpermitir:hover{
+   cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+.col-btnInfo{
+  width:50%;
+  text-align: center;
+  padding : 0;
+}
+.col-btnDesc{
+  width: 50%;
+  text-align: center;
+  padding: 0;
+}
+.checkbox{
+  width: 30px;
+  height: 30px;
+}
+
+.divIcon{
+width: 20%;
+}
+.divText{
+width: 80%;
+}
+.contenido-modal{
+  width: 90%;
+}
+.mobileMenu{
+  width: 70%;
+  position: fixed;
+  top: 8px;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  transform: translate(-100%);
+  transition: all ease 0.25s;
+
+}
+.open{
+    transform: translateX(0);
+  }
+  .overlay{
+   position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background:rgba(0,0,0,0.452);
+  display: none;
+}
+.open{
+  display: block;
+  }
+  .iconosMenu{
+left:0;
+  }
+  .divLogo{
+display: block;
+  }
+  #h6User{
+    display: block;
+  padding-top: 30px;
+   color: black;
+    padding-bottom: 10px;
+}
+li{
+border-bottom: 1px solid #d9534f;
+padding-top: 5px;
+padding-bottom: 5px;
+
+}
+.imgLogo{
+  width: 45%;
+  height: 45%;
+}
+
+ .separador span::before,.separador span::after{
+  width: 160%;
+}
+.preferencias{
+width:30px;
+height:30px;
+}
+.divIconoModalInfo{
+  width:20%;
+}
+.divParrafoModalInfo{
+width:80%;
+}
+#divd{
+  margin: 20px;
+}
+#contenMenu{
+background: white;
+color: black;
+}
+#color{
+  color: black;
+}
+}
+
+@media (orientation:landscape) {
+  
+.checkbox{
+  width: 30px;
+  height: 30px;
+}
+.col-btnInfo{
+  width:50%;
+  text-align: center;
+}
+.col-btnDesc{
+  width: 50%;
+  text-align: center;
+}
+.contenido-modal{
+  width: 80%;
+}
+.divIcon{
+padding: 9px;
+}
+.divText{
+padding: 9px;
+}
+
+}
+
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+.mobileMenu{
+  width: 50%;
+  overflow: scroll;
+
+}
+.Men{
+  margin-bottom: 40px;
+}
+.imgLogo{
+  width: 45%;
+  height: 45%;
+}
+ .separador span::before,.separador span::after{
+
+  width: 315%;
+ 
+}
+
+}
+
+
